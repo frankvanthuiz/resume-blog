@@ -14,4 +14,18 @@ REQUIREMENTS:
 - Do NOT include any Etsy CTAs — those are added automatically
 - End with a brief conclusion paragraph
 
+STRUCTURE (in this order):
+1. H1 title
+2. Intro paragraph
+3. TL;DR section — immediately after the intro, before the first H2:
+   ## TL;DR
+   - [3–5 bullet points summarizing the key takeaways]
+4. H2 sections (main body)
+5. FAQ section — before the conclusion paragraph:
+   ## Frequently Asked Questions
+   ### [Question]
+   [Answer paragraph]
+   (5–7 Q&A pairs relevant to common search queries about this topic)
+6. Conclusion paragraph
+
 Output ONLY the markdown body content. No frontmatter. No explanation. Just the article.
