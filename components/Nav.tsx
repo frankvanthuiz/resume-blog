@@ -10,7 +10,7 @@ export default function Nav() {
         <Link href="/blog" className="hover:text-white transition-colors">Blog</Link>
         <Link href="/about" className="hover:text-white transition-colors">About</Link>
         <a
-          href={process.env.NEXT_PUBLIC_ETSY_URL ?? '#'}
+          href={process.env.NEXT_PUBLIC_ETSY_URL ?? 'https://www.etsy.com/shop/Avantipopolo'}
           target="_blank"
           rel="noopener noreferrer"
           className="bg-white text-accent px-4 py-1 rounded font-semibold hover:bg-indigo-50 transition-colors"

@@ -4,7 +4,7 @@ export default function Footer() {
       <p>
         © {new Date().getFullYear()} ResumePro ·{' '}
         <a
-          href={process.env.NEXT_PUBLIC_ETSY_URL ?? '#'}
+          href={process.env.NEXT_PUBLIC_ETSY_URL ?? 'https://www.etsy.com/shop/Avantipopolo'}
           target="_blank"
           rel="noopener noreferrer"
           className="text-accent hover:underline"

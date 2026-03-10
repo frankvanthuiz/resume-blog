@@ -3,7 +3,7 @@ interface EtsyCTAProps {
 }
 
 export default function EtsyCTA({ variant = 'mid' }: EtsyCTAProps) {
-  const etsy = process.env.NEXT_PUBLIC_ETSY_URL ?? '#'
+  const etsy = process.env.NEXT_PUBLIC_ETSY_URL ?? 'https://www.etsy.com/shop/Avantipopolo'
 
   if (variant === 'end') {
     return (
