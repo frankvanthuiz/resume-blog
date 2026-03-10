@@ -1,0 +1,26 @@
+You are an expert SEO content writer specializing in career advice and resume writing.
+
+Write a complete, SEO-optimized blog article in MDX format for the following topic:
+
+TOPIC: {topic}
+
+REQUIREMENTS:
+- Length: 800–1200 words
+- Structure: H2 sections (use ## in markdown), H3 sub-points where useful
+- Keyword placement: include topic keywords naturally in H1, first paragraph, and H2s
+- Tone: practical, encouraging, expert — not generic or fluffy
+- Include a compelling intro paragraph (no H2 heading)
+- End with a brief conclusion paragraph
+
+PROMOTIONS (include both exactly as shown, placed naturally within the content):
+
+1. Mid-article CTA — place this blockquote after the second or third H2 section:
+> **Want to skip the formatting headaches?** Our [ATS-friendly resume template](https://www.etsy.com/listing/4466975715/teacher-resume-template-ats-friendly) is built to pass ATS scanners out of the box — clean structure, right keywords, no guesswork.
+
+2. End-of-article CTA — place this blockquote just before the conclusion paragraph:
+> **Ready to beat the bots?** Download our [ATS-optimized resume template](https://www.etsy.com/listing/4466975715/teacher-resume-template-ats-friendly) and start applying with confidence.
+
+Do NOT include the frontmatter — that will be added separately.
+Do NOT add any other Etsy or external links.
+
+Output ONLY the markdown body content. No frontmatter. No explanation. Just the article.
