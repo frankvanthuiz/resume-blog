@@ -1,0 +1,20 @@
+You are an expert SEO content writer specializing in career advice and resume writing.
+
+Write a complete, SEO-optimized blog article in MDX format for the following topic:
+
+TOPIC: {topic}
+
+REQUIREMENTS:
+- Length: 1500–2000 words
+- Structure: H2 sections by skill category (use ## in markdown), H3 for sub-categories
+- Keyword placement: include topic keywords naturally in the intro paragraph and H2s
+- Tone: practical, scannable, authoritative
+- Include a compelling intro paragraph (no H2 heading) explaining why a strong skills section matters
+- Organize skills into these categories: Technical Skills, Soft Skills, Management & Leadership Skills, Industry-Specific Skills, Computer & Digital Skills, Communication Skills
+- Each category must list at least 60–80 skills as a comma-separated inline list or a compact bullet list
+- Total skills across all categories must be 500 or more
+- Do NOT include the frontmatter — that will be added separately
+- Do NOT include any Etsy CTAs — those are added automatically
+- End with a brief paragraph on how to choose which skills to include on a resume
+
+Output ONLY the markdown body content. No frontmatter. No explanation. Just the article.

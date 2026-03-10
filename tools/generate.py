@@ -84,10 +84,15 @@ def estimate_reading_time(content: str) -> int:
     return max(1, round(words / 200))
 
 
-def generate_article(topic: str) -> dict:
+def generate_article(topic: str, prompt_file: str = None) -> dict:
     import anthropic
     client = anthropic.Anthropic(api_key=os.getenv('ANTHROPIC_API_KEY'))
-    prompt = read_prompt_template().replace('{topic}', topic)
+    if prompt_file:
+        with open(prompt_file) as f:
+            tmpl = f.read()
+    else:
+        tmpl = read_prompt_template()
+    prompt = tmpl.replace('{topic}', topic)
 
     print(f"Generating article: {topic}")
     message = client.messages.create(
@@ -155,6 +160,8 @@ def main():
     parser = argparse.ArgumentParser(description='Generate SEO articles for the resume blog')
     parser.add_argument('topic', nargs='+', help='Article topic')
     parser.add_argument('--dry-run', action='store_true', help='Print MDX without committing to GitHub')
+    parser.add_argument('--prompt-file', default=None,
+                        help='Path to a custom prompt template file (overrides default)')
     args = parser.parse_args()
 
     topic = ' '.join(args.topic)
@@ -162,7 +169,7 @@ def main():
     if not args.dry_run:
         validate_env()
 
-    article = generate_article(topic)
+    article = generate_article(topic, prompt_file=args.prompt_file)
 
     if args.dry_run:
         print('\n--- DRY RUN: MDX output (not committed) ---\n')
