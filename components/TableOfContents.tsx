@@ -17,7 +17,7 @@ export default function TableOfContents({ content }: { content: string }) {
       <ul className="space-y-1">
         {items.map(item => (
           <li key={item.id}>
-            <a href={`#${item.id}`} className="text-accent text-sm hover:underline">
+            <a href={`#${item.id}`} className="text-white text-sm hover:underline">
               {item.text}
             </a>
           </li>
