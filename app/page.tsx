@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <div>
       {/* Hero */}
-      <section className="px-6 py-20 text-center" style={{background: 'linear-gradient(135deg, #1e1b4b, #0f172a)'}}>
+      <section className="px-6 py-20 text-center" style={{background: 'linear-gradient(135deg, #0a0f1e, #0f1a35 60%, #1e3055)'}}>
         <h1 className="text-4xl font-bold text-white mb-4 leading-tight">
           Write a Resume That Gets <span className="text-accent">Interviews</span>
         </h1>
@@ -18,7 +18,7 @@ export default function Home() {
           href={process.env.NEXT_PUBLIC_ETSY_URL ?? '#'}
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-block bg-accent text-white font-bold px-8 py-3 rounded-lg hover:bg-indigo-500 transition-colors text-lg"
+          className="inline-block bg-accent text-bg font-bold px-8 py-3 rounded-lg hover:opacity-90 transition-opacity text-lg"
         >
           Shop Resume Templates →
         </a>
@@ -40,14 +40,14 @@ export default function Home() {
       </section>
 
       {/* Bottom Etsy banner */}
-      <section className="bg-teal-800 py-12 px-6 text-center">
+      <section className="bg-surface py-12 px-6 text-center" style={{borderTop: '1px solid #1e3055'}}>
         <h2 className="text-white font-bold text-2xl mb-2">Ready to stand out?</h2>
-        <p className="text-teal-200 mb-6">Professional, ATS-optimized resume templates available now.</p>
+        <p className="text-subtle mb-6">Professional, ATS-optimized resume templates available now.</p>
         <a
           href={process.env.NEXT_PUBLIC_ETSY_URL ?? '#'}
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-block bg-white text-teal-800 font-bold px-8 py-3 rounded-lg hover:bg-teal-50 transition-colors"
+          className="inline-block bg-accent text-bg font-bold px-8 py-3 rounded-lg hover:opacity-90 transition-opacity"
         >
           Browse Templates on Etsy →
         </a>

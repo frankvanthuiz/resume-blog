@@ -8,13 +8,13 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        bg: '#0f172a',
-        surface: '#1e293b',
-        border: '#334155',
-        accent: '#6366f1',
-        'accent-light': '#a5b4fc',
-        muted: '#64748b',
-        subtle: '#94a3b8',
+        bg: '#0a0f1e',
+        surface: '#0f1a35',
+        border: '#1e3055',
+        accent: '#f59e0b',
+        'accent-light': '#fcd34d',
+        muted: '#4a6080',
+        subtle: '#8aafcc',
       },
     },
   },

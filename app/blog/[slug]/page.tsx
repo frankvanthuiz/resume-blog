@@ -44,7 +44,7 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
       </nav>
 
       {/* Category badge */}
-      <span className="inline-block text-accent-light text-xs px-3 py-1 rounded-full uppercase tracking-widest mb-3" style={{background: '#1e1b4b'}}>
+      <span className="inline-block text-accent text-xs px-3 py-1 rounded-full uppercase tracking-widest mb-3" style={{background: '#1e3055'}}>
         {post.category.replace(/-/g, ' ')}
       </span>
 
